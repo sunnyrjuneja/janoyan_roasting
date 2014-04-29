@@ -1,6 +1,6 @@
 [
   {
-    "id": "costa-rica-modal",
+    "id": "costa-rica",
     "shop_item_img": "img/costa-rica.jpg",
     "modal_img": "img/modal/costa-rica-modal.jpg",
     "name": "costa rica tarrazu",
@@ -14,7 +14,7 @@
     "container": "bag",
     "categories": []
   }, {
-    "id": "kenya-modal",
+    "id": "kenya",
     "shop_item_img": "img/kenya.jpg",
     "modal_img": "img/modal/kenya-modal.jpg",
     "name": "kenya nyeri ndaro-ini ab",
@@ -29,7 +29,7 @@
     "container": "bag",
     "categories": []
   }, {
-    "id": "el-salvador-modal",
+    "id": "el-salvador",
     "shop_item_img": "img/el-salvador.jpg",
     "modal_img": "img/modal/el-salvador-modal.jpg",
     "name": "el salvador finca siberia bourbon",
@@ -44,7 +44,7 @@
     "container": "bag",
     "categories": []
   }, {
-    "id": "guatemala-modal",
+    "id": "guatemala",
     "shop_item_img": "img/guatemala.jpg",
     "modal_img": "img/modal/guatemala-modal.jpg",
     "name": "guatemala huehuetenango xinabajul",
@@ -59,7 +59,7 @@
     "container": "bag",
     "categories": []
   }, {
-    "id": "ethiopia-modal",
+    "id": "ethiopia",
     "shop_item_img": "img/ethiopia.jpg",
     "modal_img": "img/modal/ethiopia-modal.jpg",
     "name": "ethiopia zonegediyo kochere yirgacheffe",
@@ -74,7 +74,7 @@
     "container": "bag",
     "categories": []
   }, {
-    "id": "espresso-roast-modal",
+    "id": "espresso-roast",
     "shop_item_img": "img/espresso-roast.jpg",
     "modal_img": "img/modal/espresso-modal.jpg",
     "name": "espresso roast",
@@ -86,7 +86,7 @@
     "container": "bag",
     "categories": ["espresso"]
   }, {
-    "id": "french-roast-modal",
+    "id": "french-roast",
     "shop_item_img": "img/french-roast.jpg",
     "modal_img": "img/modal/french-roast-modal.jpg",
     "name": "french roast",
@@ -100,7 +100,7 @@
     "container": "bag",
     "categories": []
   }, {
-    "id": "colombia-decaf-modal",
+    "id": "colombia-decaf",
     "shop_item_img": "img/colombia-decaf.jpg",
     "modal_img": "img/modal/colombia-decaf-modal.jpg",
     "name": "colombia narino gerardo lorenzo swp decaf",
@@ -114,7 +114,7 @@
     "container": "bag",
     "categories": ["decaf"]
   }, {
-    "id": "iced-coffee-concentrate-modal",
+    "id": "iced-coffee-concentrate",
     "shop_item_img": "img/iced-coffee-concentrate.jpg",
     "modal_img": "img/modal/iced-coffee-modal.jpg",
     "name": "iced coffee concentrate",
