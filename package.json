@@ -1,0 +1,15 @@
+{
+  "name": "janoyan_roasting",
+  "author": "Sunny Juneja <jr.sunny@gmail.com",
+  "description": "Janoyan Roasting's web site.",
+  "engine": "node 0.10.26",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whatasunnyday/janoyan_roasting.git"
+  },
+  "private": true,
+  "devDependencies": {
+    "gulp": "3.6.x",
+    "http-server": "0.6.x"
+  }
+}

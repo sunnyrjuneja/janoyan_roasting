@@ -1,0 +1,17 @@
+{{ $stateParam }}
+<div ng-repeat="coffee in coffees" class="span4">
+  <a ng-href="#/shop/{{ coffee.id }}"><img class="selections-image" ng-src="{{ coffee.shop_item_img }}"></a>
+  <div class="selections-divider"></div>
+  <div>
+    <div class="order-button">
+      <p class="order-text">order</p>
+    </div>
+    <p class="price-text">${{ coffee.price }} <span class="quantity-text">per {{ coffee.bag_size }}oz {{ coffee.container | shorthand }}</span></p>
+    <div class="circle2-city"></div>
+    <div class="circle2-cityplus"></div>
+    <div class="circle2-fullcity"></div>
+    <div class="circle2-fullcityplus"></div>
+    <div class="circle2-vienna"></div>
+    <div class="active-circle"></div>
+  </div>
+</div>

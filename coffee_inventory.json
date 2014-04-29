@@ -1,0 +1,131 @@
+[
+  {
+    "id": "costa-rica-modal",
+    "shop_item_img": "img/costa-rica.jpg",
+    "modal_img": "img/modal/costa-rica-modal.jpg",
+    "name": "costa rica tarrazu",
+    "intensity": "medium intensity",
+    "description": "Overtones of dark sugars and toasted nut, with a light-bodied finish",
+    "roast_range": [
+      "City Plus"
+    ],
+    "price": 15,
+    "bag_size": 12,
+    "container": "bag",
+    "categories": []
+  }, {
+    "id": "kenya-modal",
+    "shop_item_img": "img/kenya.jpg",
+    "modal_img": "img/modal/kenya-modal.jpg",
+    "name": "kenya nyeri ndaro-ini ab",
+    "intensity": "bold intensity",
+    "description": "Dark fruits and pulpy citrus dominate the palate, with a creamy body and complex sugars",
+    "roast_range": [
+      "City Plus",
+      "Full City"
+    ],
+    "price": 15,
+    "bag_size": 12,
+    "container": "bag",
+    "categories": []
+  }, {
+    "id": "el-salvador-modal",
+    "shop_item_img": "img/el-salvador.jpg",
+    "modal_img": "img/modal/el-salvador-modal.jpg",
+    "name": "el salvador finca siberia bourbon",
+    "intensity": "medium intensity",
+    "description": "Malic fruits with hints of mild citrus and cocoa",
+    "roast_range": [
+      "City Plus",
+      "Full City"
+    ],
+    "price": 15,
+    "bag_size": 12,
+    "container": "bag",
+    "categories": []
+  }, {
+    "id": "guatemala-modal",
+    "shop_item_img": "img/guatemala.jpg",
+    "modal_img": "img/modal/guatemala-modal.jpg",
+    "name": "guatemala huehuetenango xinabajul",
+    "intensity": "medium intensity",
+    "description": "Unrefined sugars paired with toasted nut and light fruit notes",
+    "roast_range": [
+      "City Plus",
+      "Full City"
+    ],
+    "price": 15,
+    "bag_size": 12,
+    "container": "bag",
+    "categories": []
+  }, {
+    "id": "ethiopia-modal",
+    "shop_item_img": "img/ethiopia.jpg",
+    "modal_img": "img/modal/ethiopia-modal.jpg",
+    "name": "ethiopia zonegediyo kochere yirgacheffe",
+    "intensity": "medium-bold intensity",
+    "description": "Intense aromatics; floral and bright with a perfumed finish",
+    "roast_range": [
+      "City",
+      "City Plus"
+    ],
+    "price": 15,
+    "bag_size": 12,
+    "container": "bag",
+    "categories": []
+  }, {
+    "id": "espresso-roast-modal",
+    "shop_item_img": "img/espresso-roast.jpg",
+    "modal_img": "img/modal/espresso-modal.jpg",
+    "name": "espresso roast",
+    "intensity": "medium-bold intensity",
+    "description": "Varies by current blend, please contact us for our present selections",
+    "roast_range": [],
+    "price": 20,
+    "bag_size": 16,
+    "container": "bag",
+    "categories": ["espresso"]
+  }, {
+    "id": "french-roast-modal",
+    "shop_item_img": "img/french-roast.jpg",
+    "modal_img": "img/modal/french-roast-modal.jpg",
+    "name": "french roast",
+    "intensity": "medium-bold intensity",
+    "description": "Bittersweet, woody tones with hints of chocolate",
+    "roast_range": [
+      "Vienna"
+    ],
+    "price": 20,
+    "bag_size": 16,
+    "container": "bag",
+    "categories": []
+  }, {
+    "id": "colombia-decaf-modal",
+    "shop_item_img": "img/colombia-decaf.jpg",
+    "modal_img": "img/modal/colombia-decaf-modal.jpg",
+    "name": "colombia narino gerardo lorenzo swp decaf",
+    "intensity": "mild intensity",
+    "description": "Bright, clean and delicate cup flavors, with a citrusy zest",
+    "roast_range": [
+      "City Plus"
+    ],
+    "price": 17,
+    "bag_size": 12,
+    "container": "bag",
+    "categories": ["decaf"]
+  }, {
+    "id": "iced-coffee-concentrate-modal",
+    "shop_item_img": "img/iced-coffee-concentrate.jpg",
+    "modal_img": "img/modal/iced-coffee-modal.jpg",
+    "name": "iced coffee concentrate",
+    "intensity": "medium-bold intensity",
+    "description": "Concentrated cold brew iced coffee<br>Makes up to 18 cups after dilution<br>Takes 24 hours for us to brew, and lasts up to 5 weeks in your fridge",
+    "roast_range": [
+      "City Plus"
+    ],
+    "price": 25,
+    "bag_size": 32,
+    "container": "liquid container",
+    "categories": ["iced"]
+  }
+]
