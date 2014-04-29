@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/whatasunnyday/janoyan_roasting.git"
   },
+  "scripts": {
+    "start": "./node_modules/.bin/http-server"
+  },
   "private": true,
   "devDependencies": {
     "gulp": "3.6.x",
