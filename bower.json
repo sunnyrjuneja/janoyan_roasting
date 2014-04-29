@@ -1,0 +1,13 @@
+{
+  "name": "janoyan_roasting",
+  "authors": [
+    "Sunny Juneja <me@sunnyjuneja.com>"
+  ],
+  "description": "Janoyan Roasting website",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}
