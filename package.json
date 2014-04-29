@@ -1,7 +1,7 @@
 {
   "name": "janoyan_roasting",
   "author": "Sunny Juneja <jr.sunny@gmail.com",
-  "description": "Janoyan Roasting's web site.",
+  "description": "Janoyan Roasting website",
   "engine": "node 0.10.26",
   "repository": {
     "type": "git",
