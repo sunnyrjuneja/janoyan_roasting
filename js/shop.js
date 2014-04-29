@@ -35,10 +35,10 @@ var coffeeApp = angular.module('coffeeApp', ['ngSanitize', 'ui.router'])
             }]
           })
          .state('shop.coffee', {
-            url: '/:coffee',
+            url: '/coffee/:coffee',
             templateUrl: 'templates/shop.coffee.html',
             controller: ['$scope', '$stateParams', 'utils', function($scope, $stateParams, utils) {
-              $scope.coffee = utils.findById($scope.coffees, $stateParams.coffee) 
+              $scope.coffees.get($stateParams.coffee).then(function(coffee) { $scope.coffee = coffee; });
             }]
           })
           .state('wholesale', {
@@ -60,7 +60,7 @@ coffeeApp
   .controller('NavCtrl', ['$scope', '$location', 
     function($scope, $location) {
       $scope.isActive = function(viewLocation) {
-        return viewLocation === $location.path();
+        return $location.path().indexOf(viewLocation) > -1;
       };
     }])
   .controller('MenuFilterCtrl', ['$scope', '$stateParams',
@@ -70,54 +70,56 @@ coffeeApp
       };
     }]);
 
-coffeeApp.factory('coffees', ['$http', 'utils', function($http, utils) {
-  var path = 'coffee_inventory.json';
-  var coffees = $http.get(path).then(function(resp) {
-    return resp.data;
+coffeeApp
+  .factory('coffees', ['$http', 'utils', function($http, utils) {
+    var path = 'coffee_inventory.json';
+    var coffees = $http.get(path).then(function(resp) {
+      return resp.data;
+    });
+
+    var factory = {};
+    factory.all = function() {
+      return coffees;
+    }
+
+    factory.get = function(id) {
+      return coffees.then(function(coffees) {
+        return utils.findById(coffees, id);
+      })
+    };
+    return factory;
+  }]).factory('utils', function() {
+    return {
+      findById: function(coffees, id) {
+        for(var i = 0; i < coffees.length; i++) {
+          if(coffees[i].id === id) { return coffees[i]; }
+        }
+      },
+      findByCategory: function(coffees, cat) {
+        coffee_category = [];
+        if(cat == "all") {
+          return coffees;
+        } else {
+          for(var i = 0; i < coffees.length; i++) {
+            if(coffees[i].categories.indexOf(cat) != -1) { coffee_category.push(coffees[i]); }
+          }
+          return coffee_category;
+        }
+      }
+    }
   });
 
-  var factory = {};
-  factory.all = function() {
-    return coffees;
-  }
-
-  factory.get = function(id) {
-    return coffees.then(function() {
-      return utils.findById(coffees, id);
-    })
-  };
-  return factory;
-}]).factory('utils', function() {
-  return {
-    findById: function(coffees, id) {
-      for(var i = 0; i < coffees.length; i++) {
-        if(coffees[i].id == id) { return coffees[i]; }
-      }
-    },
-    findByCategory: function(coffees, cat) {
-      coffee_category = [];
-      if(cat == "all") {
-        return coffees;
+coffeeApp
+  .filter('unsafe', function($sce) {
+    return function(val) {
+      return $sce.trustAsHtml(val);
+    };
+  }).filter('shorthand', function() {
+    return function(val) {
+      if(val === "liquid container") {
+        return "(liq.)"
       } else {
-        for(var i = 0; i < coffees.length; i++) {
-          if(coffees[i].categories.indexOf(cat) != -1) { coffee_category.push(coffees[i]); }
-        }
-        return coffee_category;
+        return val;
       }
     }
-  }
-});
-
-coffeeApp.filter('unsafe', function($sce) {
-  return function(val) {
-    return $sce.trustAsHtml(val);
-  };
-}).filter('shorthand', function() {
-  return function(val) {
-    if(val === "liquid container") {
-      return "(liq.)"
-    } else {
-      return val;
-    }
-  }
-});
+  });
