@@ -1,8 +1,8 @@
-<div id="{{ coffee.id }}" class="fade" tabindex="-1" role="dialog" aria-labelledby="{{ coffee.id }}">
+<div id="{{ coffee.id }}" tabindex="-1" role="dialog" aria-labelledby="{{ coffee.id }}">
   <div class="modal-header">
     <img ng-src="{{ coffee.modal_img }}" class="modal-header-img">
     <h2 class="modal-jumbotron-tagline">{{ coffee.name }}</h2>
-    <img src="img/icon/close-icon.png" data-dismiss="modal" class="modal-header-close">
+    <img src="img/icon/close-icon.png" ng-click="dismiss()" class="modal-header-close">
   </div>
   <div class="modal-body">
     <p class="body-heading">{{ coffee.intensity }}</p>

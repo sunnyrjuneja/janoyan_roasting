@@ -1,4 +1,4 @@
-var coffeeApp = angular.module('coffeeApp', ['ngSanitize', 'ui.router'])
+var coffeeApp = angular.module('coffeeApp', ['ngSanitize', 'ui.bootstrap', 'ui.router'])
   .run(['$rootScope', '$state', '$stateParams',
       function ($rootScope, $state, $stateParams) {
         $rootScope.$state = $state;
@@ -36,10 +36,35 @@ var coffeeApp = angular.module('coffeeApp', ['ngSanitize', 'ui.router'])
           })
          .state('shop.coffee', {
             url: '/coffee/:coffee',
-            templateUrl: 'templates/shop.coffee.html',
-            controller: ['$scope', '$stateParams', 'utils', function($scope, $stateParams, utils) {
-              $scope.coffees.get($stateParams.coffee).then(function(coffee) { $scope.coffee = coffee; });
-            }]
+            onEnter: function($stateParams, $state, $modal) {
+              $modal.open({
+                templateUrl: 'templates/shop.coffee.html',
+                //resolve: {
+                //  coffee: ['coffees', function(coffees) { coffees.get($stateParams.coffee); }]
+                //},
+                controller: ['$scope', 'coffees', function($scope, coffees) {
+                  coffees.get($stateParams.coffee).then(function(coffee) { $scope.coffee = coffee; });
+
+                  $scope.dismiss = function() {
+                    $scope.$dismiss();
+                  };
+
+                  $scope.save = function() {
+                    item.update().then(function() {
+                      $scope.$close(true);
+                    });
+                  };
+                }]
+              }).result.then(function(result) {
+                if (result) {
+                  return $state.transitionTo("shop");
+                }
+              });
+            }
+            //templateUrl: 'templates/shop.coffee.html',
+            //controller: ['$scope', '$stateParams', 'utils', function($scope, $stateParams, utils) {
+            //  $scope.coffees.get($stateParams.coffee).then(function(coffee) { $scope.coffee = coffee; });
+            //}]
           })
           .state('wholesale', {
             url: '/wholesale',
