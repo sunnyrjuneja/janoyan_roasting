@@ -7,11 +7,22 @@
       <p class="order-text">order</p>
     </div>
     <p class="price-text">${{ coffee.price }} <span class="quantity-text">per {{ coffee.bag_size }}oz {{ coffee.container | shorthand }}</span></p>
-    <div class="circle2-city"></div>
-    <div class="circle2-cityplus"></div>
-    <div class="circle2-fullcity"></div>
-    <div class="circle2-fullcityplus"></div>
-    <div class="circle2-vienna"></div>
-    <div class="active-circle"></div>
+    <div class="roast-range-box">
+      <div class="circle active-roast outer-circle">
+        <div class="circle city"></div>
+      </div>
+      <div class="circle active-roast outer-circle">
+        <div class="circle cityplus"></div>
+      </div>
+      <div class="circle active-roast outer-circle">
+        <div class="circle cityplus"></div>
+      </div>
+      <div class="circle active-roast outer-circle">
+        <div class="circle fullcityplus"></div>
+      </div>
+      <div class="circle active-roast outer-circle">
+        <div class="circle vienna"></div>
+      </div>
+    </div>
   </div>
 </div>

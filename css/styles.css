@@ -448,7 +448,7 @@ textarea {
 	display: inline-block;
 }
 
-.circle {
+.roast-filter .circle {
 	border-radius: 50%;
 	width: 11px;
 	height: 11px;
@@ -457,23 +457,45 @@ textarea {
 	margin-right: 15px;
 }
 
+.roast-range-box .circle {
+    height: 100%;
+    width: 100%;
+    background: #FFF;
+    border-radius: 50%;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.roast-range-box > .outer-circle {
+    width: 15px;
+    height: 15px;
+    margin-left: 0px;
+    margin-right: 10px;
+    float: left;
+}
+
+.roast-range-box > .active-roast {
+    border: 1px solid #944444;
+}
+
 .city {
-	background: #cdcdcd;
+    background: #cdcdcd!important;
 }
 
 .cityplus {
-	background: #a5a19f;
+    background: #a5a19f!important;
 }
 
 .fullcity {
-	background: #7a7471;
+    background: #7a7471!important;
 }
+
 .fullcityplus {
-	background: #484444;
+    background: #484444!important;
 }
 
 .vienna {
-	background: #000;
+    background: #000!important;
 }
 
 .selections-image {
