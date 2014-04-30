@@ -8,11 +8,15 @@
     "url": "https://github.com/whatasunnyday/janoyan_roasting.git"
   },
   "scripts": {
-    "start": "./node_modules/.bin/http-server"
+    "start": "./node_modules/.bin/http-server site -c-1"
   },
   "private": true,
   "devDependencies": {
+    "http-server": "0.6.x",
     "gulp": "3.6.x",
-    "http-server": "0.6.x"
+    "gulp-useref": "0.4.x",
+    "gulp-rename": "1.2.x",
+    "gulp-concat": "2.2.x",
+    "gulp-uglify": "0.2.x"
   }
 }
