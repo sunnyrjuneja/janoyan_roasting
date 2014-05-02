@@ -1,60 +1,32 @@
 [
   {
-    "id": "costa-rica",
-    "shop_item_img": "img/costa-rica.jpg",
-    "modal_img": "img/modal/costa-rica-modal.jpg",
-    "name": "costa rica tarrazu",
-    "intensity": "medium intensity",
-    "description": "Overtones of dark sugars and toasted nut, with a light-bodied finish",
-    "roast_range": [
-      "City Plus"
-    ],
-    "price": 15,
-    "bag_size": 12,
-    "container": "bag",
-    "categories": []
-  }, {
-    "id": "kenya",
-    "shop_item_img": "img/kenya.jpg",
-    "modal_img": "img/modal/kenya-modal.jpg",
-    "name": "kenya nyeri ndaro-ini ab",
-    "intensity": "bold intensity",
-    "description": "Dark fruits and pulpy citrus dominate the palate, with a creamy body and complex sugars",
-    "roast_range": [
-      "City Plus",
-      "Full City"
-    ],
-    "price": 15,
-    "bag_size": 12,
-    "container": "bag",
-    "categories": []
-  }, {
-    "id": "el-salvador",
-    "shop_item_img": "img/el-salvador.jpg",
-    "modal_img": "img/modal/el-salvador-modal.jpg",
-    "name": "el salvador finca siberia bourbon",
-    "intensity": "medium intensity",
-    "description": "Malic fruits with hints of mild citrus and cocoa",
-    "roast_range": [
-      "City Plus",
-      "Full City"
-    ],
-    "price": 15,
-    "bag_size": 12,
-    "container": "bag",
-    "categories": []
-  }, {
     "id": "guatemala",
     "shop_item_img": "img/guatemala.jpg",
     "modal_img": "img/modal/guatemala-modal.jpg",
-    "name": "guatemala huehuetenango xinabajul",
+    "name": "guatemala patzun - finca santa anita",
     "intensity": "medium intensity",
-    "description": "Unrefined sugars paired with toasted nut and light fruit notes",
+    "description": "Caramel flavor, walnut, milk chocolate, apricot and nectarine acidity with honey and bittering cocoa notes.",
     "roast_range": [
       "City Plus",
       "Full City"
     ],
     "price": 15,
+    "helium-url": "http://he2.co/ZJ5F6B8Q5M6",
+    "bag_size": 12,
+    "container": "bag",
+    "categories": []
+  }, {
+    "id": "colombia",
+    "shop_item_img": "img/colombia.jpg",
+    "modal_img": "img/modal/colombia-modal.jpg",
+    "name": "colombia huila pitalito - guttierrez-calderon",
+    "intensity": "mild intensity",
+    "description": "Apple sweetness, chocolate, citrus oil, black tea, crisp and clean cup, chocolate mousse finish.",
+    "roast_range": [
+      "City Plus"
+    ],
+    "price": 16,
+    "helium-url": "http://he2.co/PE4B5X6U9E2",
     "bag_size": 12,
     "container": "bag",
     "categories": []
@@ -62,15 +34,32 @@
     "id": "ethiopia",
     "shop_item_img": "img/ethiopia.jpg",
     "modal_img": "img/modal/ethiopia-modal.jpg",
-    "name": "ethiopia zonegediyo kochere yirgacheffe",
+    "name": "ethiopia kaffa - mitchiti coop",
     "intensity": "medium-bold intensity",
-    "description": "Intense aromatics; floral and bright with a perfumed finish",
+    "description": "Dried peach, creamy body, pineapple, fresh ginger, balanced brightness, citrus acidity, earl grey tea. Great for iced coffee.",
     "roast_range": [
       "City",
       "City Plus"
     ],
+    "price": 17,
+    "helium-url": "http://he2.co/EW3T3P2S7I4",
+    "bag_size": 12,
+    "container": "bag",
+    "categories": []
+  }, {
+    "id": "el-salvador",
+    "shop_item_img": "img/el-salvador.jpg",
+    "modal_img": "img/modal/el-salvador-modal.jpg",
+    "name": "el salvador - finca matalapa bourbon",
+    "intensity": "medium intensity",
+    "description": "Fresh caramel, almond, complex notes of pear and apple with a mild citrusy sweetness. Great as single-origin espresso.",
+    "roast_range": [
+      "City Plus",
+      "Full City"
+    ],
     "price": 15,
     "bag_size": 12,
+    "helium-url": "http://he2.co/AR0R0X6U9E2",
     "container": "bag",
     "categories": []
   }, {
@@ -85,47 +74,5 @@
     "bag_size": 16,
     "container": "bag",
     "categories": ["espresso"]
-  }, {
-    "id": "french-roast",
-    "shop_item_img": "img/french-roast.jpg",
-    "modal_img": "img/modal/french-roast-modal.jpg",
-    "name": "french roast",
-    "intensity": "medium-bold intensity",
-    "description": "Bittersweet, woody tones with hints of chocolate",
-    "roast_range": [
-      "Vienna"
-    ],
-    "price": 20,
-    "bag_size": 16,
-    "container": "bag",
-    "categories": []
-  }, {
-    "id": "colombia-decaf",
-    "shop_item_img": "img/colombia-decaf.jpg",
-    "modal_img": "img/modal/colombia-decaf-modal.jpg",
-    "name": "colombia narino gerardo lorenzo swp decaf",
-    "intensity": "mild intensity",
-    "description": "Bright, clean and delicate cup flavors, with a citrusy zest",
-    "roast_range": [
-      "City Plus"
-    ],
-    "price": 17,
-    "bag_size": 12,
-    "container": "bag",
-    "categories": ["decaf"]
-  }, {
-    "id": "iced-coffee-concentrate",
-    "shop_item_img": "img/iced-coffee-concentrate.jpg",
-    "modal_img": "img/modal/iced-coffee-modal.jpg",
-    "name": "iced coffee concentrate",
-    "intensity": "medium-bold intensity",
-    "description": "Concentrated cold brew iced coffee<br>Makes up to 18 cups after dilution<br>Takes 24 hours for us to brew, and lasts up to 5 weeks in your fridge",
-    "roast_range": [
-      "City Plus"
-    ],
-    "price": 25,
-    "bag_size": 32,
-    "container": "liquid container",
-    "categories": ["iced"]
   }
 ]
