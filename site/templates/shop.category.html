@@ -4,7 +4,9 @@
   <div class="selections-divider"></div>
   <div>
     <div class="order-button">
-      <p class="order-text">order</p>
+      <p class="order-text">
+        <snipcart-button product="coffee" text="Order" />
+      </p>
     </div>
     <p class="price-text">${{ coffee.price }} <span class="quantity-text">per {{ coffee.bag_size }}oz {{ coffee.container | shorthand }}</span></p>
     <div class="roast-range-box">

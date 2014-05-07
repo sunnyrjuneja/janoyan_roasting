@@ -6,7 +6,7 @@ var coffeeApp = angular.module('coffeeApp', ['ngSanitize', 'ui.bootstrap', 'ui.r
       }])
   .config(['$stateProvider', '$urlRouterProvider',
       function($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise("home");
+        
         $stateProvider
           .state('home', {
             url: '/home',
@@ -89,6 +89,22 @@ coffeeApp
         return menuItem == $stateParams.category;
       };
     }]);
+
+
+coffeeApp
+  .directive("snipcartButton", function() {
+    return {
+      templateUrl: 'templates/snipcartbutton.html',
+      restrict: 'E',
+      scope: {
+        product: '='
+      },
+      link: function (scope, element, attrs) {
+        scope.text = attrs.text;
+      }  
+    }
+  });
+
 
 coffeeApp
   .factory('coffees', ['$http', 'utils', function($http, utils) {
