@@ -5,74 +5,71 @@ var coffeeApp = angular.module('coffeeApp', ['ngSanitize', 'ui.bootstrap', 'ui.r
         $rootScope.$stateParams = $stateParams;
       }])
   .config(['$stateProvider', '$urlRouterProvider',
-      function($stateProvider, $urlRouterProvider) {
-        
-        $stateProvider
-          .state('home', {
-            url: '/home',
-            templateUrl: 'templates/home.html'
-          })
-          .state('shop', {
-            url: '/shop',
-            templateUrl: 'templates/shop.html',
-            resolve: {
-              contacts: ['coffees',
-                function(coffees) {
-                  return coffees.all();
-                }]
-            },
-            controller: ['$scope', '$state', 'coffees',
-              function($scope, $state, coffees) {
-                $scope.coffees = coffees;
+    function($stateProvider, $urlRouterProvider) {
+      $stateProvider
+        .state('home', {
+          url: '/home',
+          templateUrl: 'templates/home.html'
+        })
+        .state('shop', {
+          url: '/shop',
+          templateUrl: 'templates/shop.html',
+          resolve: {
+            contacts: ['coffees',
+              function(coffees) {
+                return coffees.all();
               }]
-          })
-          .state('shop.category', {
-            url: '/:category',
-            templateUrl: 'templates/shop.category.html',
-            controller: ['$scope', '$stateParams', 'coffees', 'utils', 
-              function($scope, $stateParams, coffees, utils) {
-                $scope.category = $stateParams.category;
-                coffees.all().then(function (coffees) { $scope.coffees = utils.findByCategory(coffees, $stateParams.category); });
+          },
+          controller: ['$scope', '$state', 'coffees',
+            function($scope, $state, coffees) {
+              $scope.coffees = coffees;
             }]
-          })
-         .state('shop.category.coffee', {
-            url: '/coffee/:coffee',
-            onEnter: function($stateParams, $state, $modal) {
-              $modal.open({
-                templateUrl: 'templates/shop.coffee.html',
-                //resolve: {
-                //  coffee: ['coffees', function(coffees) { coffees.get($stateParams.coffee); }]
-                //},
-                controller: ['$scope', '$stateParams', 'coffees', function($scope, $stateParams, coffees) {
-                  coffees.get($stateParams.coffee).then(function(coffee) { $scope.coffee = coffee; });
+        })
+        .state('shop.category', {
+          url: '/:category',
+          templateUrl: 'templates/shop.category.html',
+          controller: ['$scope', '$stateParams', 'coffees', 'utils', 
+            function($scope, $stateParams, coffees, utils) {
+              $scope.category = $stateParams.category;
+              coffees.all().then(function (coffees) { $scope.coffees = utils.findByCategory(coffees, $stateParams.category); });
+          }]
+        })
+       .state('shop.category.coffee', {
+          url: '/coffee/:coffee',
+          onEnter: function($stateParams, $state, $modal) {
+            $modal.open({
+              templateUrl: 'templates/shop.coffee.html',
+              controller: ['$scope', '$stateParams', 'coffees', function($scope, $stateParams, coffees) {
+                coffees.get($stateParams.coffee).then(function(coffee) { $scope.coffee = coffee; });
 
-                  $scope.dismiss = function() {
-                    $scope.$dismiss($stateParams.category);
-                  }
+                $scope.dismiss = function() {
+                  $scope.$dismiss($stateParams.category);
+                }
 
-                  $scope.close = function() {
-                    $scope.$close($stateParams.category);
-                  };
-                }]
-              }).result.then(function(category) {
-                return $state.transitionTo("shop.category", {category: category});
-              }, function() {
-                return $state.transitionTo("shop.category", {category: $stateParams.category});
-              })
-            }
-          })
-          .state('wholesale', {
-            url: '/wholesale',
-            templateUrl: 'templates/wholesale.html'
-          })
-          .state('club', {
-            url: '/club',
-            templateUrl: 'templates/club.html'
-          })
-          .state('contact', {
-            url: '/contact',
-            templateUrl: 'templates/contact.html'
-          });
+                $scope.close = function() {
+                  $scope.$close($stateParams.category);
+                };
+              }]
+            }).result.then(function(category) {
+              return $state.transitionTo("shop.category", {category: category});
+            }, function() {
+              return $state.transitionTo("shop.category", {category: $stateParams.category});
+            })
+          }
+        })
+        .state('wholesale', {
+          url: '/wholesale',
+          templateUrl: 'templates/wholesale.html'
+        })
+        .state('club', {
+          url: '/club',
+          templateUrl: 'templates/club.html'
+        })
+        .state('contact', {
+          url: '/contact',
+          templateUrl: 'templates/contact.html'
+        });
+        $urlRouterProvider.when("", "/home");
     }])
   .value('$anchorScroll', angular.noop);
 
@@ -99,7 +96,7 @@ coffeeApp
       scope: {
         product: '='
       },
-      link: function (scope, element, attrs) {
+      link: function(scope, element, attrs) {
         scope.text = attrs.text;
       }  
     }
