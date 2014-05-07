@@ -783,3 +783,8 @@ div.modal.fade.in {
 .snipcart-checkout-container {
   z-index: 3000;
 }
+
+button.snipcart-add-item {
+	background-color: transparent;
+	border: none;
+}
