@@ -99,7 +99,25 @@ coffeeApp
       link: function(scope, element, attrs) {
         scope.text = attrs.text;
       }  
-    }
+    };
+  })
+  .directive("roastrange", function() {
+    return {
+      templateUrl: 'templates/roastrange.html',
+      restrict: 'E',
+      scope: {
+        product: '='
+      },
+      link: function(scope, element, attrs) {
+        var cssRoastClass = function(roast) {
+          if(roast) return roast.replace(" ", "").toLowerCase();
+        };
+        scope.ranges = ['city', 'cityplus', 'fullcity', 'fullcityplus', 'vienna'],
+        scope.isActive = function(range, roastRange) {
+          return roastRange.map(cssRoastClass).indexOf(range) !== -1;
+        }
+      }
+    };
   });
 
 

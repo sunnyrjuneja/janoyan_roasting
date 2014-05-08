@@ -7,22 +7,6 @@
       <snipcart-button product="coffee" text="order" />
     </div>
     <p class="price-text">${{ coffee.price }} <span class="quantity-text">per {{ coffee.bag_size }}oz {{ coffee.container | shorthand }}</span></p>
-    <div class="roast-range-box">
-      <div class="circle active-roast outer-circle">
-        <div class="circle city"></div>
-      </div>
-      <div class="circle active-roast outer-circle">
-        <div class="circle cityplus"></div>
-      </div>
-      <div class="circle active-roast outer-circle">
-        <div class="circle cityplus"></div>
-      </div>
-      <div class="circle active-roast outer-circle">
-        <div class="circle fullcityplus"></div>
-      </div>
-      <div class="circle active-roast outer-circle">
-        <div class="circle vienna"></div>
-      </div>
-    </div>
+    <roastrange product="coffee"/>
   </div>
 </div>
