@@ -443,9 +443,19 @@ textarea {
 	letter-spacing: 1px;
 	text-decoration: none;
 	color: #303030;
-	margin-top: 0;
-	margin-bottom: 7px;
+	margin-top: 3.5px;
+	margin-bottom: 3.5px;
 	display: inline-block;
+}
+
+a:hover.roast-inline {
+  color: #303030;
+  text-decoration: none;
+}
+
+a:focus.roast-inline {
+  color: #303030;
+  text-decoration: none;
 }
 
 .roast-filter .circle {

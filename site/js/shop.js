@@ -14,16 +14,11 @@ var coffeeApp = angular.module('coffeeApp', ['ngSanitize', 'ui.bootstrap', 'ui.r
         .state('shop', {
           url: '/shop',
           templateUrl: 'templates/shop.html',
-          resolve: {
-            contacts: ['coffees',
-              function(coffees) {
-                return coffees.all();
-              }]
-          },
-          controller: ['$scope', '$state', 'coffees',
-            function($scope, $state, coffees) {
-              $scope.coffees = coffees;
+          controller: ['$scope', '$state',
+            function($scope, $state) {
+              $state.transitionTo("shop.category", {category: 'all'});
             }]
+
         })
         .state('shop.category', {
           url: '/:category',

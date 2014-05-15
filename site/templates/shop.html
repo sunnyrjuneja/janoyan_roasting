@@ -18,55 +18,31 @@
         <div class="flag-heading flag-heading-menu">coffee</div>
       </div>
       <ul class="unstyled menu-filter" ng-controller="MenuFilterCtrl">
-        <li ng-class="{ 'active': isActive('all') }" >
+        <li ng-class="{ 'active': isActive('all') }">
           <a href="#/shop/all" class="filter-info">All Coffee</a></li>
         <ul class="unstyled roast-filter">
           <li><span class="filter-info">Roast Range</span></li>
-          <li><div class="circle city"></div><p class="roast-inline">City</p></li>
-          <li><div class="circle cityplus"></div><p class="roast-inline">City Plus</p></li>
-          <li><div class="circle fullcity"></div><p class="roast-inline">Full City</p></li>
-          <li><div class="circle fullcityplus"></div><p class="roast-inline">Full City Plus</p></li>
-          <li><div class="circle vienna"></div><p class="roast-inline">Vienna</p></li>
+          <li ng-class="{ 'active': isActive('city') }"><div class="circle city"></div><a class="roast-inline">City</a></li>
+          <li ng-class="{ 'active': isActive('city-plus') }"><div class="circle cityplus"></div><p class="roast-inline">City Plus</p></li>
+          <li ng-class="{ 'active': isActive('full-city') }"><div class="circle fullcity"></div><p class="roast-inline">Full City</p></li>
+          <li ng-class="{ 'active': isActive('full-city-plus') }"><div class="circle fullcityplus"></div><p class="roast-inline">Full City Plus</p></li>
+          <li ng-class="{ 'active': isActive('vienna') }"><div class="circle vienna"></div><p class="roast-inline">Vienna</p></li>
         </ul>
-        <li ng-class="{ 'active': isActive('bean-source') }" >
-          <a class="filter-info">Bean Source</a></li>
-        <li ng-class="{ 'active': isActive('single-origin') }" >
-          <a class="filter-info">Single Origin</a></li>
-        <li ng-class="{ 'active': isActive('blends') }" >
-          <a class="filter-info">Blends</a></li>
-        <li ng-class="{ 'active': isActive('espresso') }" >
+        <li ng-class="{ 'active': isActive('single-origin') }">
+          <a href="#/shop/single-origin" class="filter-info">Single Origin</a></li>
+        <li ng-class="{ 'active': isActive('blends') }">
+          <a href="#/shop/blends" class="filter-info">Blends</a></li>
+        <li ng-class="{ 'active': isActive('espresso') }">
           <a href="#/shop/espresso" class="filter-info">Espresso</a></li>
-        <li ng-class="{ 'active': isActive('decaf') }" >
+        <li ng-class="{ 'active': isActive('decaf') }">
           <a href="#/shop/decaf" class="filter-info">Decaf</a></li>
-        <li ng-class="{ 'active': isActive('iced') }" >
+        <li ng-class="{ 'active': isActive('iced') }">
           <a href="#/shop/iced" class="filter-info">Iced Coffee</a></li>
-        <p class="selector-heading">wholesale</p>
-        <p class="selector-heading">merchandise</p>
-        <p class="selector-heading">coffee club</p>
       </ul>
     </div>
     <div class="span8 shop-items">
       <div class="row">
-        <ui-view>
-          <div class="shop-item menu span4">
-            <img class="selections-image" src="img/menu/all-coffee.jpg" alt="All coffee selections">
-          </div>
-          <div class="shop-item menu span4">
-            <img class="selections-image" src="img/menu/single-origin.jpg" alt="Single origin selections">
-          </div>
-          <div class="shop-item menu span4">
-            <img class="selections-image" src="img/menu/blends.jpg" alt="Blend selections">
-          </div>
-          <div class="shop-item menu span4">
-            <img class="selections-image" src="img/menu/espresso-roast.jpg" alt="Espresso roast selections">
-          </div>
-          <div class="shop-item menu span4">
-            <img class="selections-image" src="img/menu/decaf.jpg" alt="Decaf selections">
-          </div>
-          <div class="shop-item menu span4">
-            <img class="selections-image" src="img/menu/iced-coffee.jpg" alt="Iced coffee concentrate selections">
-          </div>
-        </ui-view>
+        <ui-view></ui-view>
       </div>
     </div>
   </div>
