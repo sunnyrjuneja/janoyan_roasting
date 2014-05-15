@@ -595,23 +595,25 @@ textarea {
 	margin: 0;
 }
 
-.order-button {
-	background-color: #944444;
-	width: 124px;
-	height: 42px;
-	border-width: 0;
-	margin: 0;
+.coffee-list {
+  margin-bottom: 50px;
+}
+
+.coffee-list-order-text {
+	font-size: 16px;
 	float: right;
+  margin-top: 10px;
+	padding: 7px 24px;
+	background-color: #944444;
 }
 
 .order-text {
 	font-variant: small-caps;
 	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 24px;
 	letter-spacing: 1px;
 	text-decoration: none;
 	color: #fff;
-	padding: 7px;
+	background-color: #944444;
 	margin: 0;
 	text-align: center;
 }
@@ -713,17 +715,12 @@ div.modal-header {
 }
 
 .modal-order-text {
-	font-variant: small-caps;
-	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 30px;
-	letter-spacing: 1px;
-	text-decoration: none;
-	color: #fff;
+	font-size: 24px;
 	background-color: #944444;
-	padding: 16px 40px;
 	float: right;
+  padding: 10px 36px;
 	margin-right: 22px;
-	margin-top: 8px;
+	margin-top: 14px;
 }
 
 .modal-jumbotron-tagline { 
