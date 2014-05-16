@@ -1,0 +1,15 @@
+{
+  "id": "GPFSA",
+  "location": "guatemala",
+  "name": "guatemala patzun - finca santa anita",
+  "intensity": "medium intensity",
+  "description": "Strong caramel flavor, walnut, milk chocolate, apricot and nectarine acidity with honey and bittering cocoa notes.",
+  "roast_range": [
+    "City Plus",
+    "Full City"
+    ],
+  "price": 15,
+  "bag_size": 12,
+  "container": "bag",
+  "categories": ["single-origin"]
+}

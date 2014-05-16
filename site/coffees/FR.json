@@ -1,0 +1,14 @@
+{
+  "id": "FR",
+  "location": "french-roast",
+  "name": "guatemala patzun - finca santa anita",
+  "intensity": "medium intensity",
+  "description": "Bittersweet notes, intense full body, chocolate finish. This Blend is designed to uphold flavors at high temperature to allowing for you to enjoy a true French Roast: Darkly Roasted, full-bodied, low acidity.",
+  "roast_range": [
+    "Vienna"
+  ],
+  "price": 15,
+  "bag_size": 12,
+  "container": "bag",
+  "categories": ["blends"]
+}

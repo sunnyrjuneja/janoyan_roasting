@@ -280,6 +280,21 @@ div.selector-flag {
 	top: -42px;
 }
 
+.flag-heading > a {
+  color: #fff;
+}
+
+
+.flag-heading > a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.flag-heading > a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
 .flag-heading-contact {
 	margin-left: 120px;
 	top: 44px;

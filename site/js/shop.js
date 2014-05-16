@@ -14,11 +14,6 @@ var coffeeApp = angular.module('coffeeApp', ['ngSanitize', 'ui.bootstrap', 'ui.r
         .state('shop', {
           url: '/shop',
           templateUrl: 'templates/shop.html',
-          controller: ['$scope', '$state',
-            function($scope, $state) {
-              $state.transitionTo("shop.category", {category: 'all'});
-            }]
-
         })
         .state('shop.category', {
           url: '/:category',
@@ -29,7 +24,7 @@ var coffeeApp = angular.module('coffeeApp', ['ngSanitize', 'ui.bootstrap', 'ui.r
               coffees.all().then(function (coffees) { $scope.coffees = utils.findByCategory(coffees, $stateParams.category); });
           }]
         })
-       .state('shop.category.coffee', {
+        .state('shop.category.coffee', {
           url: '/coffee/:coffee',
           onEnter: function($stateParams, $state, $modal) {
             $modal.open({
@@ -104,9 +99,6 @@ coffeeApp
         product: '='
       },
       link: function(scope, element, attrs) {
-        var cssRoastClass = function(roast) {
-          if(roast) return roast.replace(" ", "").toLowerCase();
-        };
         scope.ranges = ['city', 'cityplus', 'fullcity', 'fullcityplus', 'vienna'],
         scope.isActive = function(range, roastRange) {
           return roastRange.map(cssRoastClass).indexOf(range) !== -1;
@@ -118,9 +110,11 @@ coffeeApp
 
 coffeeApp
   .factory('coffees', ['$http', 'utils', function($http, utils) {
-    var path = 'coffee_inventory.json';
+    var path = 'coffees/inventory.json';
     var coffees = $http.get(path).then(function(resp) {
-      return resp.data;
+      coffee_arr = []
+      for(i in resp.data) { coffee_arr[i] = JSON.parse(resp.data[i]); }
+      return coffee_arr;
     });
 
     var factory = {};
@@ -147,6 +141,7 @@ coffeeApp
           return coffees;
         } else {
           for(var i = 0; i < coffees.length; i++) {
+            console.log(cat);
             if(coffees[i].categories.indexOf(cat) != -1) { coffee_category.push(coffees[i]); }
           }
           return coffee_category;
@@ -168,4 +163,16 @@ coffeeApp
         return val;
       }
     }
+  }).filter('modalImage', function() {
+    return function(coffee) {
+      return '/img/modals/' + coffee['location'] + '-modal.jpg'
+    }
+  }).filter('previewImage', function() {
+    return function(coffee) {
+      return '/img/previews/' + coffee['location'] + '-preview.jpg'
+    }
   });
+
+var cssRoastClass = function(roast) {
+  if(roast) return roast.replace(" ", "").toLowerCase();
+};

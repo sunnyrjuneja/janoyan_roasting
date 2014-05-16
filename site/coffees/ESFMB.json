@@ -1,0 +1,17 @@
+{
+  "id": "ESFMB",
+  "location": "el-salvador",
+  "name": "el salvador - finca matalapa bourbon",
+  "intensity": "medium intensity",
+  "description": "Fresh caramel, almond, complex notes of pear and apple with a mild citrusy sweetness. Great as single-origin espresso.",
+  "roast_range": [
+    "City Plus",
+    "Full City",
+    "Full City Plus"
+  ],
+  "price": 15,
+  "bag_size": 12,
+  "container": "bag",
+  "categories": ["single-origin"]
+}
+
