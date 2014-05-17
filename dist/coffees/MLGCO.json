@@ -1,0 +1,13 @@
+{
+  "id": "MLGCO",
+  "location": "mexico",
+  "valid": true,
+  "name": "Mexico Los Gropos Certified Organic",
+  "intensity": "medium-bold intensity",
+  "description": "Moderate acidity with subtle caramel, apple juice sweetness, hint of rye and pepper.",
+  "roast_range": ["Full City"],
+  "price": 17,
+  "bag_size": 12,
+  "container": "bag",
+  "categories": ["decaf", "single-origin"]
+}
