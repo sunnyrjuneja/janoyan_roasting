@@ -10,8 +10,8 @@
     "Full City",
     "Full City Plus"
   ],
-  "price": 17,
-  "bag_size": 16,
+  "price": 15,
+  "bag_size": 12,
   "container": "bag",
   "categories": ["espresso", "blends"]
 }
