@@ -1,2 +1,0 @@
-var samurai = function(){};
-samurai();

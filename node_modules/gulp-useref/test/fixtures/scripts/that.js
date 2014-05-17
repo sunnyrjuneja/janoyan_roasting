@@ -1,2 +1,0 @@
-function ninja(){}
-ninja();
