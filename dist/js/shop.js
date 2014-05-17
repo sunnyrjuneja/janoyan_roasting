@@ -51,10 +51,6 @@ var coffeeApp = angular.module('coffeeApp', ['ngSanitize', 'ui.bootstrap', 'ui.r
           url: '/wholesale',
           templateUrl: 'templates/wholesale.html'
         })
-        .state('club', {
-          url: '/club',
-          templateUrl: 'templates/club.html'
-        })
         .state('contact', {
           url: '/contact',
           templateUrl: 'templates/contact.html'

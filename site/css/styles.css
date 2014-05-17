@@ -49,6 +49,8 @@ html { overflow-x: hidden; }
   max-width: 23px;
   height: auto;
   cursor: pointer;
+  float: right;
+  margin-right: 23px;
 }
 
 nav ul {
