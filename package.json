@@ -16,6 +16,7 @@
     "gulp": "3.6.x",
     "gulp-html-replace": "1.1.x",
     "gulp-concat": "2.2.x",
-    "gulp-uglify": "0.2.x"
+    "gulp-uglify": "0.2.x",
+    "gulp-clean": "0.2.x"
   }
 }
