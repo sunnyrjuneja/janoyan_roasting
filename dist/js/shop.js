@@ -71,6 +71,22 @@ coffeeApp
       $scope.isActive = function(menuItem) {
         return menuItem == $stateParams.category;
       };
+    }])
+  .controller('FormCtrl', ['$scope', '$http',
+    function($scope, $http) {
+      $scope.formData = {};
+
+      $scope.processForm = function() {
+        $http.jsonp('http://getsimpleform.com/messages/ajax?form_api_token=7e4ad92db7435ec9a4ea74ca1ecfe273', {params: $scope.formData})
+          .success(function(data) {
+            $scope.formData = {};
+            alert("Thanks for contacting us. We'll get back to you shortly. You can also reach us at 818-275-7035 or JRCCoffee@live.com.");
+          })
+          .error(function(data) {
+            $scope.formData = {};
+            alert("Thanks for contacting us. We'll get back to you shortly. You can also reach us at 818-275-7035 or JRCCoffee@live.com.");
+          })
+      }
     }]);
 
 

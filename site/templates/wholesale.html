@@ -20,15 +20,15 @@
       <img class="offset1 logo-large" src="img/icons/coffee-bean-texture.png" alt="Janoyan Roasting Co.">
     </div>
     <div class="span6">
-      <form class="contact-form-background">
+      <form class="contact-form-background" ng-submit="processForm()" ng-controller="FormCtrl">
         <label class="form-heading form-spacer">name</label>
-        <input class="field" type="text" name="name">
+        <input class="field" type="text" name="name" ng-model ="formData.name">
         <label class="form-heading">email</label>
-        <input class="field" type="text" name="email">
+        <input class="field" type="text" name="email" ng-model="formData.email">
         <label class="form-heading">phone</label>
-        <input class="field" type="text" name="phone">
+        <input class="field" type="text" name="phone" ng-model="formData.phone">
         <label class="form-heading">message</label>
-        <textarea class="field-large" name="message"></textarea>
+        <textarea class="field-large" name="message" ng-model="formData.message"></textarea>
         <div class="form-divider"></div>
         <button class="send-button" type="submit">send</button>
       </form>
