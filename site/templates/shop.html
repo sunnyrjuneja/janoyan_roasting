@@ -20,14 +20,6 @@
       <ul class="unstyled menu-filter" ng-controller="MenuFilterCtrl">
         <li ng-class="{ 'active': isActive('all') }">
           <a href="#/shop/all" class="filter-info">All Coffee</a></li>
-        <ul class="unstyled roast-filter">
-          <li><span class="filter-info">Roast Range</span></li>
-          <li ng-class="{ 'active': isActive('city') }"><div class="circle city"></div><a class="roast-inline">City</a></li>
-          <li ng-class="{ 'active': isActive('city-plus') }"><div class="circle cityplus"></div><p class="roast-inline">City Plus</p></li>
-          <li ng-class="{ 'active': isActive('full-city') }"><div class="circle fullcity"></div><p class="roast-inline">Full City</p></li>
-          <li ng-class="{ 'active': isActive('full-city-plus') }"><div class="circle fullcityplus"></div><p class="roast-inline">Full City Plus</p></li>
-          <li ng-class="{ 'active': isActive('vienna') }"><div class="circle vienna"></div><p class="roast-inline">Vienna</p></li>
-        </ul>
         <li ng-class="{ 'active': isActive('single-origin') }">
           <a href="#/shop/single-origin" class="filter-info">Single Origin</a></li>
         <li ng-class="{ 'active': isActive('blends') }">
