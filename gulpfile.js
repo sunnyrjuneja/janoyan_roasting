@@ -4,7 +4,7 @@ var clean = require('gulp-clean');
 var htmlReplace = require('gulp-html-replace');
 
 gulp.task('make', function(callback) {
-  runSequence('clean', 'copy', callback);
+  runSequence('clean', 'copy', 'snipcart', callback);
 });
 
 gulp.task('clean', function() {
@@ -12,7 +12,7 @@ gulp.task('clean', function() {
     .pipe(clean());
 });
 
-gulp.task('copy', ['snipcart'], function() {
+gulp.task('copy', function() {
   return gulp.src('site/**/**')
     .pipe(gulp.dest('dist/'))
 });
