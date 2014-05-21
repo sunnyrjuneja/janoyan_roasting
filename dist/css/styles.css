@@ -199,6 +199,16 @@ a.footer-sales {
 	float: right;
 }
 
+a.signature:hover {
+  text-decoration: none;
+	color: #303030;
+}
+
+a.signature:focus {
+  text-decoration: none;
+	color: #303030;
+}
+
 .inline-block {
 	display: inline-block;
 }
