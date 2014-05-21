@@ -13,5 +13,5 @@
   "price": 15,
   "bag_size": 12,
   "container": "bag",
-  "categories": ["espresso", "blends"]
+  "categories": ["blends"]
 }
