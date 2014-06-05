@@ -153,7 +153,6 @@ coffeeApp
           return coffees;
         } else {
           for(var i = 0; i < coffees.length; i++) {
-            console.log(cat);
             if(coffees[i].categories.indexOf(cat) != -1) { coffee_category.push(coffees[i]); }
           }
           return coffee_category;
