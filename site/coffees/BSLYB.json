@@ -1,0 +1,16 @@
+{
+  "id": "BSLYB",
+  "location": "brazil",
+  "valid": true,
+  "name": "brazil – santa lucia yellow bourbon",
+  "intensity": "mild intensity",
+  "description": "Cinnamon and hazelnut aromas, layers of chocolate and nut, caramel, walnut brownie richness. Great as a Single-Origin Espresso.",
+  "roast_range": [
+    "Full City",
+    "Full City Plus"
+  ],
+  "price": 15,
+  "bag_size": 12,
+  "container": "bag",
+  "categories": ["single-origin"]
+}
