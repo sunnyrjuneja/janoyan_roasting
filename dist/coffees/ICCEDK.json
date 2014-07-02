@@ -1,0 +1,16 @@
+{
+  "id": "ICCEDK",
+  "location": "ethiopia",
+  "valid": true,
+  "name": "iced coffee concentrate - ethiopia deri kochowa",
+  "short_name": "iced - ethiopia kochowa",
+  "description": "This is a light roast Iced Coffee, perfect for this hot Southern California days. This has a nice light body and is filled with light fruity citrus flavors with hints herbal tea flavors. This is perfect to new coffee drinkers, it offers you simplicity to brew and a milder taste that often surprises non-coffee drinkers.<br>Get one bottle free with the purchase of 5. <br> Makes up to 18 cups after dilution. Lasts up to 5 weeks in your fridge. ", 
+  "roast_range": [
+    "City",
+    "City Plus"
+  ],
+  "price": 10,
+  "bag_size": 16,
+  "container": "liquid container",
+  "categories": ["iced"]
+}

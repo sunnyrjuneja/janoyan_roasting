@@ -208,6 +208,30 @@ a.signature:focus {
 
 /* End footer */
 
+/* Begin item preview */
+
+.item-preview-name { 
+	position: absolute;
+	top: 116px;
+	left: 13px;
+	width: 100%;
+	margin: 0px;
+	color: white;
+	font: 18px 'Montserrat', Arial, sans-serif;
+	font-weight: 600;
+	font-variant: small-caps;
+	letter-spacing: 0px;
+	width: 233px;
+	display: inline-block;
+  padding: 0;
+}
+
+.item-preview-name span a:hover {
+	text-decoration: none;
+}
+
+/* End item preview */
+
 /* Begin jumbotron */
 
 .jumbotron {
@@ -221,9 +245,6 @@ a.signature:focus {
 	left: 0;
 	width: 100%;
 	margin: 0px;
-}
-
-.jumbotron-tagline {
 	color: white;
 	font: 45px 'Montserrat', Arial, sans-serif;
 	font-weight: 500;
@@ -709,6 +730,7 @@ ul > ul > li {
 }
 
 /* Begin modal */
+
 div.modal {
   border-radius: 0px;
   width: 940px;

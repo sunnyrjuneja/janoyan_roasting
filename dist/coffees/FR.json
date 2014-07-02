@@ -2,7 +2,8 @@
   "id": "FR",
   "location": "french-roast",
   "valid": true,
-  "name": "French Roast Blend",
+  "name": "french roast blend",
+  "short_name": "french roast blend",
   "description": "Bittersweet notes, intense full body, chocolate finish. This Blend is designed to uphold flavors at high temperature to allowing for you to enjoy a true French Roast: Darkly Roasted, full-bodied, low acidity.",
   "roast_range": [
     "Vienna"
