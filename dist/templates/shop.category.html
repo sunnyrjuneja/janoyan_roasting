@@ -11,6 +11,6 @@
     <span class="coffee-list-order-text">
       <snipcart-button product="coffee" text="order" />
     </span>
-    <p class="price-text">${{ coffee.price }} <span class="quantity-text">per {{ coffee.bag_size }}oz {{ coffee.container | shorthand }}</span></p>
+    <p class="price-text">${{ coffee.price }} <span class="quantity-text">per {{ coffee.bag_size | size }} {{ coffee.container | shorthand }}</span></p>
   </div>
 </div>

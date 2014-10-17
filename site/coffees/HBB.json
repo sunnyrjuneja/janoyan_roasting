@@ -1,0 +1,15 @@
+{
+  "id": "HBB",
+  "location": "holiday-big",
+  "valid": true,
+  "name": "holiday gift box large",
+  "short_name": "holiday gift box large",
+  "description": "<pre>1x 12oz. Coffee Bag\n3x 4oz. Coffee Bag\n1x 1lb. See's Candy of Choice\n2x See’s Candy Bar\n2x See’s Lollipop\n3x Milano Cookie  2pk\n\nNote: Only available in LA county. We'll call you to select coffee and candies.</pre>",
+  "roast_range": [
+    "See coffee selection."
+  ],
+  "price": 65,
+  "bag_size": "large",
+  "container": "box",
+  "categories": ["holiday"]
+}

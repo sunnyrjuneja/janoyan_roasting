@@ -169,11 +169,19 @@ coffeeApp
   }).filter('shorthand', function() {
     return function(val) {
       if(val === "liquid container") {
-        return "(liq.)"
+        return "(liq.)";
       } else {
         return val;
       }
     }
+  }).filter('size', function() {
+    return function(bag_size) {
+      if(typeof bag_size == 'string' || bag_size instanceof String) {
+        return bag_size;
+      } else {
+        return bag_size + " oz";
+      }
+    };
   }).filter('modalImage', function() {
     return function(coffee) {
       return '/img/modals/' + coffee['location'] + '-modal.jpg'
