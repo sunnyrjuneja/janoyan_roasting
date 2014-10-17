@@ -239,6 +239,21 @@ a.signature:focus {
 	width: 100%;
 }
 
+.jumbotron-above {
+	width: 100%;
+	margin: 0px;
+	color: white;
+	font: 45px 'Montserrat', Arial, sans-serif;
+	font-weight: 500;
+	font-variant: small-caps;
+	letter-spacing: 0px;
+	background: rgb(0,0,0);
+	background: rgba(0,0,0,0.7);
+	width: 940px;
+	display: inline-block;
+	padding-bottom: 7px;
+}
+
 .jumbotron-tagline { 
 	position: absolute;
 	top: 40px;

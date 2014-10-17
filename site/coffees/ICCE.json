@@ -12,5 +12,5 @@
   "price": 10,
   "bag_size": 16,
   "container": "liquid container",
-  "categories": ["iced"]
+  "categories": ["espresso", "iced"]
 }
