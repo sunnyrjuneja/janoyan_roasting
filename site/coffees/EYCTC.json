@@ -1,0 +1,17 @@
+{
+  "id": "EYCTC",
+  "location": "ethiopia",
+  "valid": true,
+  "name": "ethiopia yirga cheffe teklu chele'lektu",
+  "short_name": "ethiopia yirga cheffe",
+  "description": "This is a Fair Trade Certified Organic Coffee from a cooperative in Northern Peru in the Amazonian Andes.  Nice nutty sweetness, walnut, nutmeg aroma, raw sugar fragrance, Mild intensity, brown sugar sweetness, light red apple sweetness. overall balanced cup with great nut flavors but with a crisp, sweet finish. Great coffee for the cloudy gloom of the winter season.ssion fruit aromas, floral notes of jasmine, honey, sweet lemon flavors, apricot, blueberry, white peach, delicate coffee with herbal and light fruit aromas. excellent light roast that is not too intense with the sweetness (unlike other coffees that are very high in acidity relative to sweetness), hibiscus tea finish and simply very pleasant coffee.",
+  "roast_range": [
+    "City",
+    "City Plus",
+    "Full City"
+  ],
+  "price": 15,
+  "bag_size": 12,
+  "container": "bag",
+  "categories": ["single-origin"]
+}

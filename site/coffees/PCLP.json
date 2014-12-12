@@ -1,0 +1,17 @@
+{
+  "id": "PCLP",
+  "location": "peru",
+  "valid": true,
+  "name": "peru cajamarca - leoncio perez fair trade",
+  "short_name": "peru cajamarca - leoncio ",
+  "description": "This is a Fair Trade Certified Organic Coffee from a cooperative in Northern Peru in the Amazonian Andes.  Nice nutty sweetness, walnut, nutmeg aroma, raw sugar fragrance, Mild intensity, brown sugar sweetness, light red apple sweetness. overall balanced cup with great nut flavors but with a crisp, sweet finish. Great coffee for the cloudy gloom of the winter season.",
+  "roast_range": [
+    "City Plus",
+    "Full City",
+    "Full City Plus"
+  ],
+  "price": 15,
+  "bag_size": 12,
+  "container": "bag",
+  "categories": ["single-origin"]
+}
