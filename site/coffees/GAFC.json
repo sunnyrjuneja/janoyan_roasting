@@ -1,0 +1,13 @@
+{
+  "id": "GAFC",
+  "location": "guatemala",
+  "valid": true,
+  "name": "guatemala antigua finca caberjo",
+  "short_name": "guatemala antigua finca",
+  "description": "Sweet, balanced coffee with apple brightness, juicy, sugar cane,  slight hints of orange oil and spices.",
+  "roast_range": ["City Plus", "Full City"],
+  "price": 15,
+  "bag_size": 12,
+  "container": "bag",
+  "categories": ["single-origin"]
+}
