@@ -1,0 +1,2 @@
+module CoffeeTypesHelper
+end
