@@ -1,0 +1,16 @@
+{
+  "id": "ICCE",
+  "location": "espresso",
+  "valid": true,
+  "name": "espresso iced coffee concentrate",
+  "short_name": "iced - espresso blend",
+  "description": "Iced Espresso Cold Brew is perfect for people who love espresso. Now you can have yourself an Americano, Latte, or Iced Espresso in seconds with Espresso Cold Brew from JRC Coffee. Approximately, 1-1.5oz of concentrate is equivalent to 1 shot of espresso, meaning your bottle will yield about 10-16 shots of espresso. If you're looking for a darker cold brew iced coffee than our original light, Ethiopian offering, then the espresso will still yield about 80oz, if brewed as an Iced Coffee.<br><br>Get one bottle free with the purchase of 5.", 
+  "roast_range": [
+    "Full City",
+    "Full City Plus"
+  ],
+  "price": 10,
+  "bag_size": 16,
+  "container": "liquid container",
+  "categories": ["espresso", "iced"]
+}

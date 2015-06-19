@@ -1,0 +1,72 @@
+<!-- Begin jumbotron -->
+<div class="container">
+  <img class="company-name center-image" src="img/janoyan-roasting.png" alt="Janoyan Roasting Co.">
+  <div class="jumbotron">
+    <a href="#/wholesale">
+      <h2 class="jumbotron-tagline center-text"><span class="jumbotron-background">really love coffee<span class="question-mark">?</span> buy wholesale</span></h2></a>
+    <a href="#/wholesale">
+      <img class="center-image" src="img/jumbotron/coffee-bags.jpg" alt="Really Love Coffee? Buy Wholesale">
+    </a>
+  </div>
+</div> 
+<!-- End jumbotron -->
+
+<div class="container">
+  <div class="row">
+    <div class="span4">
+      <div class="selector-flag">
+        <div class="flag-heading flag-heading-menu"><a href="#/shop">coffee</a></div>
+      </div>
+      <ul class="unstyled menu-filter" ng-controller="MenuFilterCtrl">
+        <li ng-class="{ 'active': isActive('all') }">
+          <a href="#/shop/all" class="filter-info">All Coffee</a></li>
+        <li ng-class="{ 'active': isActive('single-origin') }">
+          <a href="#/shop/single-origin" class="filter-info">Single Origin</a></li>
+        <li ng-class="{ 'active': isActive('blends') }">
+          <a href="#/shop/blends" class="filter-info">Blends</a></li>
+        <li ng-class="{ 'active': isActive('espresso') }">
+          <a href="#/shop/espresso" class="filter-info">Espresso</a></li>
+        <li ng-class="{ 'active': isActive('decaf') }">
+          <a href="#/shop/decaf" class="filter-info">Decaf</a></li>
+        <li ng-class="{ 'active': isActive('iced') }">
+          <a href="#/shop/iced" class="filter-info">Iced Coffee</a></li>
+      </ul>
+    </div>
+    <div class="span8 shop-items">
+      <div class="row">
+        <ui-view>
+          <div class="shop-item menu span4">
+            <a href="#/shop/all">
+              <img class="selections-image" src="img/menu/all-coffee.jpg" alt="All coffee selections">
+            </a>
+          </div>
+          <div class="shop-item menu span4">
+            <a href="#/shop/single-origin">
+              <img class="selections-image" src="img/menu/single-origin.jpg" alt="Single origin selections">
+            </a>
+          </div>
+          <div class="shop-item menu span4">
+            <a href="#/shop/blends">
+              <img class="selections-image" src="img/menu/blends.jpg" alt="Blend selections">
+            </a>
+          </div>
+          <div class="shop-item menu span4">
+            <a href="#/shop/espresso">
+              <img class="selections-image" src="img/menu/espresso-roast.jpg" alt="Espresso roast selections">
+            </a>
+          </div>
+          <div class="shop-item menu span4">
+            <a href="#/shop/decaf">
+              <img class="selections-image" src="img/menu/decaf.jpg" alt="Decaf selections">
+            </a>
+          </div>
+          <div class="shop-item menu span4">
+            <a href="#/shop/iced">
+              <img class="selections-image" src="img/menu/iced-coffee.jpg" alt="Iced coffee concentrate selections">
+            </a>
+          </div>
+        </ui-view>
+      </div>
+    </div>
+  </div>
+</div>

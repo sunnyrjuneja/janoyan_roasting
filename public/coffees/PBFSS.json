@@ -1,0 +1,17 @@
+{
+  "id": "PBFSS",
+  "location": "panama",
+  "valid": true,
+  "name": "panama boquete finca san sebastian",
+  "short_name": "panama boquete",
+  "description": "Complex Coffee with full body, flavors of Creamy Caramel, Toffee, Butter Pecan, dry fragrance of honey and cinnamon, Crisp acidity with light fruit tones of grape and green apple.",
+  "roast_range": [
+    "City",
+    "City Plus",
+    "Full City"
+  ],
+  "price": 15,
+  "bag_size": 12,
+  "container": "bag",
+  "categories": ["single-origin"]
+}

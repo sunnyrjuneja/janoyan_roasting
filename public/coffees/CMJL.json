@@ -1,0 +1,17 @@
+{
+  "id": "CMJL",
+  "location": "cameroon",
+  "valid": true,
+  "name": "cameroon mifi java longberry",
+  "short_name": "cameroon java longberry",
+  "description": "Sweet dry fragrance, Apricot, chocolate tones, lower acidity that most African coffees,black tea mouthfeel, caramelizing sugar.",
+  "roast_range": [
+    "City",
+    "City Plus",
+    "Full City"
+  ],
+  "price": 15,
+  "bag_size": 12,
+  "container": "bag",
+  "categories": ["single-origin"]
+}
