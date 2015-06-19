@@ -59,7 +59,7 @@ class CoffeeProductsController < ApplicationController
   def authenticate
     unless request.format == Mime::JSON
       authenticate_or_request_with_http_basic do |user, password|
-        user == 'user' && password == 'password' 
+        user == ENV['BASIC_AUTH_USERNAME'] && password == ENV['BASIC_AUTH_PASSWORD']
       end
     end
   end
