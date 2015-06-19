@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class CoffeeTypeTest < ActiveSupport::TestCase
+class CoffeeProductTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

@@ -1,0 +1,28 @@
+<div class='container'>
+  <div class='row'>
+    <h1>Coffee List</h1>
+    <p><%= link_to 'New Coffee', new_coffee_product_path %></p>
+    <div class='col-md-12'>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>active</th>
+            <th>short name</th>
+            <th>price in cents</th>
+            <th>edit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @coffees.each do |coffee| %>
+            <tr>
+              <td><%= coffee.active %></td>
+              <td><%= coffee.short_name %></td>
+              <td><%= coffee.price %></td>
+              <td><%= link_to 'Edit Coffee', edit_coffee_product_path(coffee) %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

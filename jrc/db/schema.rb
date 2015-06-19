@@ -16,15 +16,15 @@ ActiveRecord::Schema.define(version: 20150619000251) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "coffee_types", force: :cascade do |t|
-    t.boolean  "valid"
+  create_table "coffee_products", force: :cascade do |t|
+    t.boolean  "active"
     t.string   "name"
     t.string   "short_name"
     t.string   "description"
-    t.string   "roast_range"
+    t.string   "roast_range",              array: true
     t.integer  "price"
     t.string   "container"
-    t.string   "categories"
+    t.string   "categories",               array: true
     t.string   "location"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false

@@ -14,3 +14,14 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+var bindLength = function(attr) {
+  $('#coffee_product_' + attr).keyup(function() {
+    $('#'+ attr + '_length').html($(this).val().length);
+  });
+}
+
+$(document).on('page:change', function () {
+  bindLength('name');
+  bindLength('short_name');
+});
