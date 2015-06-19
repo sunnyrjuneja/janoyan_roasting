@@ -20,6 +20,11 @@ class CoffeeProduct < ActiveRecord::Base
     'Decaf'
   ]
 
+  validates_inclusion_of :active, in: [true, false]
+  validates_presence_of :name, :short_name, :description, :roast_range, :price, :container, :categories
+  validates_length_of :name, maximum: 46
+  validates_length_of :short_name, maximum: 27
+
   def as_json(*args)
     super.tap  { |h| h['valid'] = h.delete 'active' }
   end
