@@ -1,7 +1,9 @@
 <%= form_for @coffee do |f| %>
   <div class='form-group'>
+    <%= f.label :active, class: 'radio' %>
+
     <%= f.label :active, 'show', class: 'radio-inline', value: true do %>
-      <%= f.radio_button :active, true %>
+      <%= f.radio_button :active, true, checked: true %>
       Show
     <% end %>
 
