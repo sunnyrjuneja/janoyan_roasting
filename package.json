@@ -8,8 +8,7 @@
     "url": "https://github.com/whatasunnyday/janoyan_roasting.git"
   },
   "scripts": {
-    "start": "./node_modules/.bin/http-server site -c-1",
-    "deploy": "s3_website push --site=dist"
+    "start": "./node_modules/.bin/http-server site -c-1"
   },
   "private": true,
   "devDependencies": {
