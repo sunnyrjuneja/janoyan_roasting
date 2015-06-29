@@ -35,6 +35,12 @@
   </div>
 
   <div class='form-group'>
+    <%= f.label :location %>
+    <%= f.select :location, CoffeeProduct.location_options,
+      { selected: @coffee.location }, class: 'form-control' %>
+  </div>
+
+  <div class='form-group'>
     <%= f.label :roast_range %>
     <%= f.select :roast_range, CoffeeProduct.roast_range_options,
       { selected: @coffee.roast_range, include_hidden: false },

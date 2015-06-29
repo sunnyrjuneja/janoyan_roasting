@@ -53,7 +53,7 @@ class CoffeeProductsController < ApplicationController
   def coffee_product_params
     params.require(:coffee_product)
       .permit(:active, :name, :short_name, :description, :price, :container,
-              { categories: [], roast_range: [] })
+              :location, { categories: [], roast_range: [] })
   end
 
   def authenticate

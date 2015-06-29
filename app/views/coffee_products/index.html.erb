@@ -8,6 +8,7 @@
           <tr>
             <th>active</th>
             <th>short name</th>
+            <th>location</th>
             <th>price in cents</th>
             <th>edit</th>
           </tr>
@@ -17,6 +18,7 @@
             <tr>
               <td><%= coffee.active %></td>
               <td><%= coffee.short_name %></td>
+              <td><%= coffee.location %></td>
               <td><%= coffee.price %></td>
               <td><%= link_to 'Edit Coffee', edit_coffee_product_path(coffee) %></td>
             </tr>
