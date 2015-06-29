@@ -49,12 +49,12 @@
 
   <div class='form-group'>
     <%= f.label :price, 'Price (exclude $)' %>
-    <%= f.text_field :price, class: 'form-control', value: "15.00" %>
+    <%= f.text_field :price, class: 'form-control', value: @coffee.price || '15.00' %>
   </div>
 
   <div class='form-group'>
     <%= f.label :container_size, 'Container Size (exclude units)' %>
-    <%= f.text_field :container_size, class: 'form-control', value: 12 %>
+    <%= f.text_field :container_size, class: 'form-control', value: @coffee.container_size || 12 %>
   </div>
 
   <div class='form-group'>
