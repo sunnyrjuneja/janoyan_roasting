@@ -8,13 +8,13 @@ gulp.task('make', function(callback) {
 });
 
 gulp.task('clean', function() {
-  return gulp.src('public/', {'read': false})
+  return gulp.src('public/index.html', {'read': false})
     .pipe(clean());
 });
 
 gulp.task('copy', function() {
-  return gulp.src('site/**/**')
-    .pipe(gulp.dest('public/'))
+  return gulp.src('site/index.html')
+    .pipe(gulp.dest('public/index.html'))
 });
 
 gulp.task('snipcart', function () {
