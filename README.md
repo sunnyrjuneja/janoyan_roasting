@@ -1,29 +1,26 @@
-This repo is the code for http://jrccoffee.com
+# JRC Coffee
 
-required:
-nodejs && npm
+## History
 
-How to contribue to this repo:
+This application was made many years ago to help a friend setup an ecommerce
+site, give Jessica Willis a design project, and for me to learn more Node and
+Angular. It was hosted on S3 and read a static file for the product
+listings. It used SnipCart for the shopping cart.
 
-Fork this repo
+Since then, it's become a maintenance nightmare and I've converted it to a
+Rails application so I don't have to update the products manually. Eventually,
+I'll completely remove Angular and SnipCart.
 
-Clone new repo
+There is one model and three controllers. There are no tests. If you need to
+update the front end, check the public folder. Most of the logic lives in
+`public/js/shop.js`.
 
-Run `npm start` to start http-server
+## Requirements
 
-Make changes
+- Ruby 2.2.2
+- Rails 4.2.2
+- Some basic knowledge of Angular.
 
-Run `gulp make`
+## Deployment
 
-Commit && Send PR
-
-
-note: if updating the coffees you need to run `node bin/build.js` before `gulp make`.
-
-This repo uses [s3_website](https://github.com/laurilehmijoki/s3_website)
-to deploy to s3.
-
-deploy:
-```
-s3_website push --site dist
-```
+Hosted on Heroku.
