@@ -1,5 +1,5 @@
 {{ $stateParam }}
-<div ng-repeat="coffee in coffees" class="span4 coffee-list">
+<div ng-repeat="coffee in coffees | activeCoffees" class="span4 coffee-list">
   <div class="jumbotron">
     <a ng-href="#/shop/{{ category }}/coffee/{{ coffee.id }}">
       <span class="item-preview-name"><span>{{ coffee.short_name }}</span></h2>
@@ -11,6 +11,6 @@
     <span class="coffee-list-order-text">
       <snipcart-button product="coffee" text="order" />
     </span>
-    <p class="price-text">${{ coffee.price }} <span class="quantity-text">per {{ coffee.bag_size | size }} {{ coffee.container | shorthand }}</span></p>
+    <p class="price-text">${{ coffee.price }} <span class="quantity-text">per {{ coffee.container_size | size }} {{ coffee.container | shorthand }}</span></p>
   </div>
 </div>

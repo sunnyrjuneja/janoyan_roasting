@@ -8,7 +8,7 @@
           <tr>
             <th>active</th>
             <th>short name</th>
-            <th>price in cents</th>
+            <th>price</th>
             <th>edit</th>
             <th>live url</th>
           </tr>
@@ -20,7 +20,7 @@
               <td><%= coffee.short_name %></td>
               <td><%= coffee.price %></td>
               <td><%= link_to 'Edit Coffee', edit_coffee_product_path(coffee) %></td>
-              <td><%= link_to 'View Coffee', "/#/shop/all/coffee/#{cofee.id}" %></td>
+              <td><%= link_to 'View Coffee', "/#/shop/all/coffee/#{coffee.id}" %></td>
             </tr>
           <% end %>
         </tbody>

@@ -30,6 +30,7 @@ var coffeeApp = angular.module('coffeeApp', ['ngSanitize', 'ui.bootstrap', 'ui.r
             $modal.open({
               templateUrl: 'templates/shop.coffee.html',
               controller: ['$scope', '$stateParams', 'coffees', function($scope, $stateParams, coffees) {
+                console.log($stateParams.coffee);
                 coffees.get($stateParams.coffee).then(function(coffee) { $scope.coffee = coffee; });
 
                 $scope.dismiss = function() {
@@ -122,11 +123,9 @@ coffeeApp
 
 coffeeApp
   .factory('coffees', ['$http', 'utils', function($http, utils) {
-    var path = 'coffees/inventory.json';
+    var path = '/coffee_products.json';
     var coffees = $http.get(path).then(function(resp) {
-      coffee_arr = []
-      for(i in resp.data) { coffee_arr[i] = JSON.parse(resp.data[i]); }
-      return coffee_arr;
+      return resp.data;
     });
 
     var factory = {};
@@ -143,6 +142,7 @@ coffeeApp
   }]).factory('utils', function() {
     return {
       findById: function(coffees, id) {
+        id = parseInt(id, 10);
         for(var i = 0; i < coffees.length; i++) {
           if(coffees[i].id === id) { return coffees[i]; }
         }
@@ -175,20 +175,26 @@ coffeeApp
       }
     }
   }).filter('size', function() {
-    return function(bag_size) {
-      if(typeof bag_size == 'string' || bag_size instanceof String) {
-        return bag_size;
+    return function(container_size) {
+      if(typeof container_size == 'string' || container_size instanceof String) {
+        return container_size;
       } else {
-        return bag_size + " oz";
+        return container_size + " oz";
       }
     };
   }).filter('modalImage', function() {
     return function(coffee) {
-      return '/img/modals/' + coffee['location'] + '-modal.jpg'
+      return '/img/modals/' + coffee.image + '-modal.jpg'
     }
   }).filter('previewImage', function() {
     return function(coffee) {
-      return '/img/previews/' + coffee['location'] + '-preview.jpg'
+      return '/img/previews/' + coffee.image + '-preview.jpg'
+    }
+  }).filter('activeCoffees', function() {
+    return function(coffees) {
+      active = []
+      for(i in coffees) { if(coffees[i].valid) active.push(coffees[i]); }
+      return active;
     }
   });
 

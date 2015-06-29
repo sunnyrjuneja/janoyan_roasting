@@ -13,11 +13,11 @@ class CoffeeProduct < ActiveRecord::Base
   ]
 
   CATEGORY_OPTIONS = [
-    'Iced',
-    'Single Origin',
-    'Blends',
-    'Espresso',
-    'Decaf'
+    'iced',
+    'single-origin',
+    'blends',
+    'espresso',
+    'decaf'
   ]
 
   IMAGE_OPTIONS = [
@@ -51,7 +51,7 @@ class CoffeeProduct < ActiveRecord::Base
 
   validates_inclusion_of :active, in: [true, false]
   validates_presence_of :name, :short_name, :description, :image,
-    :roast_range, :price, :container, :categories
+    :roast_range, :price, :container, :container_size, :categories
   validates_length_of :name, maximum: 46
   validates_length_of :short_name, maximum: 27
 

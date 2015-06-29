@@ -11,7 +11,7 @@
     <p class="body-info">{{ coffee.roast_range.join(', ') }} </p>
     <div class="modal-divider"></div>
     <span class="bag-price">${{ coffee.price }}</span>
-    <span class="bag-size">per {{ coffee.bag_size | size }} {{ coffee.container }}</span>
+    <span class="bag-size">per {{ coffee.container_size | size }} {{ coffee.container }}</span>
     <span class="modal-order-text">
       <snipcart-button ng-click="close()" product="coffee" text="order" />
     </span>
