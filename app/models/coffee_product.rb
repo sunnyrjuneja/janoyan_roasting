@@ -20,7 +20,8 @@ class CoffeeProduct < ActiveRecord::Base
     'Decaf'
   ]
 
-  LOCATION_OPTIONS = [
+  IMAGE_OPTIONS = [
+    'espresso',
     'bali',
     'bolivia',
     'burundi',
@@ -49,7 +50,7 @@ class CoffeeProduct < ActiveRecord::Base
   ]
 
   validates_inclusion_of :active, in: [true, false]
-  validates_presence_of :name, :short_name, :description, :location,
+  validates_presence_of :name, :short_name, :description, :image,
     :roast_range, :price, :container, :categories
   validates_length_of :name, maximum: 46
   validates_length_of :short_name, maximum: 27
@@ -71,8 +72,8 @@ class CoffeeProduct < ActiveRecord::Base
       CATEGORY_OPTIONS
     end
 
-    def location_options
-      LOCATION_OPTIONS
+    def image_options
+      IMAGE_OPTIONS
     end
   end
 end
