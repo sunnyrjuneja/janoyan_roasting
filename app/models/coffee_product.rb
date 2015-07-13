@@ -21,15 +21,21 @@ class CoffeeProduct < ActiveRecord::Base
   ]
 
   IMAGE_OPTIONS = [
+    'placeholder',
     'espresso',
+    'french-roast',
+    'holiday-big',
+    'holiday-small',
     'iced-coffee',
+    'turkish',
     'bali',
     'bolivia',
-    'burundi',
     'brazil',
+    'burundi',
+    'cameroon',
     'colombia',
     'congo',
-    'costa rica',
+    'costa-rica',
     'ecuador',
     'el-salvador',
     'ethiopia',
@@ -47,6 +53,7 @@ class CoffeeProduct < ActiveRecord::Base
     'rwanda',
     'sulawesi',
     'sumatra',
+    'timor',
     'yemen'
   ]
 
