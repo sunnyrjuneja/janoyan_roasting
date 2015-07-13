@@ -1,0 +1,11 @@
+coffee:
+  active: true
+  name: indonesian java cup
+  short_name: java
+  description: delicious, finest in the land.
+  image: placeholder
+  roast_range: ["city"]
+  price: "15.00"
+  container: bag
+  container_size: 12
+  categories: ["single-origin"]

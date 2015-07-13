@@ -1,0 +1,74 @@
+<%= form_for @coffee do |f| %>
+  <div class='form-group'>
+    <%= f.label :active, class: 'radio' %>
+
+    <%= f.label :active, 'show', class: 'radio-inline', value: true do %>
+      <%= f.radio_button :active, true, checked: true %>
+      Show
+    <% end %>
+
+    <%= f.label :active, 'hide', class: 'radio-inline', value: false do %>
+      <%= f.radio_button :active, false %>
+      Hide
+    <% end %>
+  </div>
+
+  <div class='form-group'>
+    <%= f.label :name, 'Name (46 characters max)' %>
+    <%= f.text_field :name, class: 'form-control' %>
+    <p class='help-block'>
+      Current Length: <span id='name_length'><%= @coffee.name.try(:length) || 0 %></span>
+    </p>
+  </div>
+
+  <div class='form-group'>
+    <%= f.label :short_name, 'Short Name (27 characters max)' %>
+    <%= f.text_field :short_name, class: 'form-control' %>
+    <p class='help-block'>
+      Current Length: <span id='short_name_length'><%= @coffee.short_name.try(:length) || 0 %></span>
+    </p>
+  </div>
+
+  <div class='form-group'>
+    <%= f.label :description %>
+    <%= f.text_area :description, class: 'form-control' %>
+  </div>
+
+  <div class='form-group'>
+    <%= f.label :image %>
+    <%= f.select :image, CoffeeProduct.image_options,
+      { selected: @coffee.image }, class: 'form-control' %>
+  </div>
+
+  <div class='form-group'>
+    <%= f.label :roast_range %>
+    <%= f.select :roast_range, CoffeeProduct.roast_range_options,
+      { selected: @coffee.roast_range, include_hidden: false },
+      { multiple: true, class: 'form-control' } %>
+  </div>
+
+  <div class='form-group'>
+    <%= f.label :price, 'Price (exclude $)' %>
+    <%= f.text_field :price, class: 'form-control', value: @coffee.price || '15.00' %>
+  </div>
+
+  <div class='form-group'>
+    <%= f.label :container_size, 'Container Size (exclude units)' %>
+    <%= f.text_field :container_size, class: 'form-control', value: @coffee.container_size || 12 %>
+  </div>
+
+  <div class='form-group'>
+    <%= f.label :container %>
+    <%= f.select :container, CoffeeProduct.container_options,
+      { selected: @coffee.container }, class: 'form-control' %>
+  </div>
+
+  <div class='form-group'>
+    <%= f.label :categories %>
+    <%= f.select :categories, CoffeeProduct.category_options,
+      { selected: @coffee.categories, include_hidden: false },
+      { multiple: true, class: 'form-control' } %>
+  </div>
+
+  <%= f.submit class: 'btn btn-primary' %>
+<% end %>
