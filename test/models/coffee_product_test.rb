@@ -5,6 +5,15 @@ class CoffeeProductTest < ActiveSupport::TestCase
   preview_path = images_path.join('previews')
   modal_path = images_path.join('modals')
 
+  test 'saves as downcase' do
+    coffee = coffee_products(:coffeea)
+    coffee.name = 'Tasty Coffee'
+    coffee.short_name = 'Coffee'
+    coffee.save
+    coffee.reload
+    assert_equal coffee.name, 'tasty coffee'
+    assert_equal coffee.short_name, 'coffee'
+  end
   test 'correct number of images' do
     assert_equal CoffeeProduct.image_options.size, Dir[preview_path.to_s + '/*'].length
     assert_equal CoffeeProduct.image_options.size, Dir[modal_path.to_s + '/*'].length

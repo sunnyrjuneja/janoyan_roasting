@@ -63,6 +63,11 @@ class CoffeeProduct < ActiveRecord::Base
   validates_length_of :name, maximum: 46
   validates_length_of :short_name, maximum: 27
 
+  before_save do
+    self.name.downcase!
+    self.short_name.downcase!
+  end
+
   def as_json(*args)
     super.tap  { |h| h['valid'] = h.delete 'active' }
   end
