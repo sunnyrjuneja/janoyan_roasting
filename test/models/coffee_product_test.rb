@@ -6,7 +6,7 @@ class CoffeeProductTest < ActiveSupport::TestCase
   modal_path = images_path.join('modals')
 
   test 'saves as downcase' do
-    coffee = coffee_products(:coffeea)
+    coffee = coffee_products(:coffee)
     coffee.name = 'Tasty Coffee'
     coffee.short_name = 'Coffee'
     coffee.save
