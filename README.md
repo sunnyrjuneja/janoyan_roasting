@@ -11,7 +11,7 @@ Since then, it's become a maintenance nightmare and I've converted it to a
 Rails application so I don't have to update the products manually. Eventually,
 I'll completely remove Angular and SnipCart.
 
-There is one model and three controllers. There are no tests. If you need to
+There is one model and three controllers. If you need to
 update the front end, check the public folder. Most of the logic lives in
 `public/js/shop.js`.
 
